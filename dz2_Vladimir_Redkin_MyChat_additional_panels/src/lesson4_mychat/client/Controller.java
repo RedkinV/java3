@@ -258,7 +258,7 @@ public class Controller {
         String nick = regNickField.getText();
 
         if (login.equals("") || password.equals("") || nick.equals(""))
-            printLeftOrRight("Поля не должны быть пустыми.");
+            printLeftOrRight("Поля не должны быть пустыми...");
         else {
             if (socket == null || socket.isClosed()) {   // при неверном вводе пароля и попытке зайти второй раз  не сработает  условие, если не закрыть сокет
                 // сокет закрываем в стр. 103 этого же класса

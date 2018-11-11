@@ -55,12 +55,12 @@
     <HBox fx:id="registerPanel" managed="false" visible="false">
         <TextField fx:id="regLoginField" promptText="Login..." HBox.hgrow="ALWAYS" />
         <PasswordField fx:id="regPasswordField" onAction="#tryToRegister" promptText="Password.." HBox.hgrow="ALWAYS" />
-        <TextField fx:id="regNickField" promptText="Nick.." HBox.hgrow="ALWAYS" />
+        <TextField fx:id="regNickField" promptText="Nick.." onAction="#tryToRegister" HBox.hgrow="ALWAYS" />
         <Button fx:id="registerBtn" onAction="#tryToRegister" text="Register" HBox.hgrow="ALWAYS" />
     </HBox>
 
     <HBox fx:id="changeNickPanel" managed="false" visible="false">
-        <TextField fx:id="changeNickField" promptText="new nick..." HBox.hgrow="ALWAYS" />
+        <TextField fx:id="changeNickField" promptText="new nick..." onAction="#tryToChangeNick" HBox.hgrow="ALWAYS" />
         <Button fx:id="changeNickBtn" onAction="#tryToChangeNick" text="Change Nick" HBox.hgrow="ALWAYS" />
     </HBox>
 

@@ -39,7 +39,7 @@ public class RegisterController {
 
 
         public void tryToRegister(ActionEvent actionEvent) {
-            if(loginField.getText().equals("") ||passwordField.getText().equals("")) registerTextArea.appendText("login or password is empty.\n");
+
 
             Stage currentStage=(Stage)upperPanel.getScene().getWindow();
             currentStage.close();

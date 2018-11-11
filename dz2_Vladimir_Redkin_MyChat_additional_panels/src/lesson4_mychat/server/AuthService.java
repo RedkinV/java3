@@ -36,13 +36,26 @@ public class AuthService {
 
     public static boolean addUser(String login, String password, String nick) {
         String sql = String.format("INSERT INTO USERS (login, password, nickname) VALUES ('%s','%s','%s')", login, password.hashCode(), nick);
+//        try {
+//            if (statement.executeUpdate(sql) > 0) return true;
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
         try {
-            if (statement.executeUpdate(sql) > 0) return true;
-
+            System.out.println("Auth addUser method...");
+            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO USERS (login, password, nickname) VALUES (?,?,?)");
+            preparedStatement.setString(1,login);
+            preparedStatement.setString(2,password);
+            preparedStatement.setString(3,nick);
+            preparedStatement.addBatch();
+            preparedStatement.executeBatch();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return false;
+
+
+        return true;
     }
 
     public static ArrayList<String> getBlacklistByNick(String nick) {
