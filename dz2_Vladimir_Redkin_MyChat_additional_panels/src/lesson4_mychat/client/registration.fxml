@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?scenebuilder-stylesheet css/style.css?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson4_mychat.client.RegisterController">
+
+    <stylesheets>
+        <URL value="@css/style.css" />
+    </stylesheets>
+    <MenuBar fx:id="menuBar" managed="false" visible="false">
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+                <items>
+                    <MenuItem fx:id="changeNickMenuBtn" mnemonicParsing="false" text="Change Nick" visible="false" />
+                    <MenuItem fx:id="registerMenuBtn" mnemonicParsing="false" text="Register" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+    <!--<HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #6daff9;">-->
+    <!--<children>-->
+      <!--<Label alignment="TOP_CENTER" contentDisplay="RIGHT" text="MyChat" textAlignment="CENTER" HBox.hgrow="ALWAYS">-->
+      <!--<font>-->
+      <!--<Font name="Arial Narrow Bold" size="30.0" />-->
+      <!--</font>-->
+      <!--</Label>-->
+    <!--</children>-->
+    <!--</HBox>-->
+
+
+
+
+    <HBox fx:id="upperPanel">
+        <TextField fx:id="loginField" promptText="Password" HBox.hgrow="ALWAYS" />
+        <PasswordField fx:id="passwordField" onAction="#tryToRegister" promptText="Password" HBox.hgrow="ALWAYS" />
+        <Button fx:id="registerBtn" onAction="#tryToRegister" text="Register" />
+    </HBox>
+    <TextArea fx:id="registerTextArea" VBox.vgrow="ALWAYS" />
+
+
+    <!--<HBox VBox.vgrow="ALWAYS">-->
+        <!--<VBox HBox.hgrow="ALWAYS">-->
+            <!--<VBox fx:id="vBoxChat" VBox.vgrow="ALWAYS">-->
+
+            <!--</VBox>-->
+            <!--<HBox fx:id="bottomPanel" managed="false" visible="false">-->
+                <!--<TextField fx:id="textField" onAction="#sendMessage" promptText="Введите сообщение..." HBox.hgrow="ALWAYS" />-->
+                <!--<Button fx:id="sendButton" alignment="CENTER_RIGHT" onAction="#sendMessage" prefWidth="80" text="Send.." />-->
+            <!--</HBox>-->
+        <!--</VBox>-->
+        <!--<ListView fx:id="clientList" managed="false" prefWidth="80" visible="false" />-->
+    <!--</HBox>-->
+
+
+</VBox>
