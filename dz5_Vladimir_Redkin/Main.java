@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         CyclicBarrier cyclicBarrier=new CyclicBarrier(CARS_COUNT+1);
         Semaphore semaphore=new Semaphore(CARS_COUNT-2);
-        
+
         CountDownLatch countDownLatch=new CountDownLatch(CARS_COUNT);
 
 
@@ -30,6 +30,7 @@ public class Main {
         try {
             cyclicBarrier.await();
             System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
+            cyclicBarrier.await();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (BrokenBarrierException e) {
