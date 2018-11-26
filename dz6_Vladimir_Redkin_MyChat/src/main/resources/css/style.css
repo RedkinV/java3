@@ -1,0 +1,19 @@
+#sendButton{
+-fx-background-color: #6daff9;
+
+-fx-background-image: url("../image/send.png");
+     -fx-background-size: 22 22;
+     -fx-background-repeat: no-repeat;
+     -fx-background-position:8 6;
+ }
+
+#sendButton: hover{
+-fx-background-color: #396496;
+
+-fx-background-image: url("../image/glow.png");
+     -fx-background-size: 22 22;
+     -fx-background-repeat: no-repeat;
+     -fx-background-position:8 6;
+
+}
+

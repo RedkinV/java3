@@ -1,0 +1,24 @@
+2018-11-24 00:15:46 INFO  :34 - info
+2018-11-24 00:16:29 INFO  :34 - info
+2018-11-24 00:18:51 INFO  :34 - Server started.
+2018-11-24 00:19:02 INFO  :50 - Client connected.
+2018-11-24 00:28:02 INFO  :34 - Server started.
+2018-11-24 00:28:21 INFO  :50 - Client connected.
+2018-11-24 00:28:21 INFO  :145 - Client null unsubscribed.
+2018-11-24 00:29:10 INFO  :34 - Server started.
+2018-11-24 00:29:22 INFO  :50 - Client connected.
+2018-11-24 00:29:22 INFO  :138 - Client nick1 subscribed.
+2018-11-24 00:32:32 INFO  :34 - Server started.
+2018-11-24 00:32:44 INFO  :50 - Client connected.
+2018-11-24 00:32:44 WARN  :61 - Wrong logging/password
+2018-11-24 00:32:44 INFO  :145 - Client null unsubscribed.
+2018-11-24 00:38:31 INFO  :34 - Server started.
+2018-11-24 00:38:43 INFO  :50 - Client connected.
+2018-11-24 00:38:43 INFO  :54 - /authok nick1
+2018-11-24 00:38:43 INFO  :138 - Client nick1 subscribed.
+2018-11-24 00:38:47 INFO  :137 - nick1: sdfsdf
+2018-11-24 00:38:48 INFO  :137 - nick1: sdf
+2018-11-24 00:38:48 INFO  :137 - nick1: 
+2018-11-24 00:38:49 INFO  :137 - nick1: 
+2018-11-24 00:38:49 INFO  :137 - nick1: qwe
+2018-11-24 00:38:51 INFO  :137 - nick1: sdf
